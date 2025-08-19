@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.tab-btn {
+  padding: .5rem 1rem;
+  border: none;
+  cursor: pointer;
+  background: #ddd;
+}
+.tab-btn.active { background: #4CAF50; color: white; }
+
+.tab { display: none; padding: 1rem; }
+.tab.active { display: block; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+table, th, td { border: 1px solid #ccc; }
+th, td { padding: .5rem; text-align: center; }
+
+.status-present { color: green; font-weight: bold; }
+.status-absent { color: red; font-weight: bold; }
+.status-leave { color: orange; font-weight: bold; }
+
+button {
+  margin: .3rem;
+  padding: .4rem .8rem;
+  border: none;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  border-radius: 4px;
+}
+button.ghost { background: #aaa; }
+
+.stats p { margin: .3rem 0; }
